@@ -1,0 +1,25 @@
+.entity {
+    border: 5px outset rgb(180,180,180);
+    text-align: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+
+#wedding-items {
+    line-height: 25px;
+}
+
+.bold-text {
+    font-family: Georgia;
+}
+
+.bf-text {
+    font-family: 'Brush Script MT';
+    font-size: 1.1em;
+}
+
+#son-of {
+    font-family: 'Chiller';
+    font-size: 1.1em;
+    margin-top: 1px;
+}
