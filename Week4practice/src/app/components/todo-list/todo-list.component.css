@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+.enter-todo {
+    display: flex;
+    align-items: center;
+}
+
+#enter {
+    width: 550px;
+    padding: 7px;
+    font-size: 15px;
+    border: 1px solid rgb(131,127,127);
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.enter-todo button {
+    height: 33px;
+    border: none;
+    background-color: rgb(86, 86, 216);
+    color: #fff;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 1rem;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5px;
+    border: 1px solid rgb(131,127,127);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+ul input {
+    margin-right: 10px;
+}
+
+.rm {
+    background-color: #db0f0f;
+    color: #fff;
+    font-size: 1rem;
+    border: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 30%;
+}
+
+.rm:hover {
+    cursor: pointer;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+ul li span {
+    overflow-x: auto;
+}

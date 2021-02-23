@@ -1,0 +1,26 @@
+<div class="container">
+    <br>
+    <span>
+        Car: {{brand}}, model: <small>{{model}}</small>
+    </span>
+
+    <div class="alert alert-danger">
+        <ul>
+            <li>Top Speed: {{topSpeed}} km/h</li>
+            <li>Car exterior color: {{colors.exterior}}</li>
+            <li>Car interior color: {{colors.interior}}</li>
+            <li>Car available features: {{getFeatures()}}</li>
+        </ul>
+
+        <span>Let's revise our car features</span>
+
+        <ul>
+            <li *ngFor="let feat of features">{{feat}}</li>
+        </ul>
+
+        <span>Choose your car: </span>
+        <button class="btn btn-danger" (click)="toySelect()">Toyota</button>
+        <button class="btn btn-success" (click)="lexSelect()">Lexus</button>
+        <button class="btn btn-info" (click)="hyuSelect()">Hyundai</button>
+    </div>
+</div>

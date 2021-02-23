@@ -1,0 +1,15 @@
+* {
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+.container {
+    padding-top: 3rem;
+    width: 600px;
+    margin: 0 auto;
+}
+
+.container h1 {
+    font-weight: lighter;
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,22 @@
+<form class="enter-todo">
+    <input type="text" id="enter" placeholder="New Task" name="input-todo" [(ngModel)]="inputTodo">
+    <button (click)="addTodo()">Add</button>
+</form>
+
+<ul *ngIf="todos.length; else noTodos">
+    <li *ngFor="let todo of todos; let i = index">
+        <span>
+            <input type="checkbox" [checked]="todo.completed" (change)="onChange(todo.id)">
+            <strong>{{i + 1}}</strong>
+            <span [class.done]="todo.completed">
+                {{todo.content}}
+            </span>
+        </span>
+
+        <button class="rm" (click)="removeTask(todo.id)">&times;</button>
+    </li>
+</ul>
+
+<ng-template #noTodos>
+    <p style="text-align: center; margin-top: 30px; font-size: 18px;">No todos for now!</p>
+</ng-template>
