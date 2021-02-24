@@ -1,0 +1,25 @@
+/* button {
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-left: 12px;
+    width: 96px;
+    color: #fff;
+    background-color: #1976d2;
+    border: 1px solid #7c7a7a;
+    border-radius: 3px;
+    height: 32px;
+    cursor: pointer;
+} */
+
+button {
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-left: 12px;
+    width: 96px;
+    color: #fff;
+    background-color: #232f3e;
+    border: 1px solid #7c7a7a;
+    border-radius: 3px;
+    height: 32px;
+    cursor: pointer;
+}

@@ -1,0 +1,30 @@
+.top-bar-container {
+    background-color: #232f3e;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    color: #fff;
+    border-radius: 3px;
+    margin: 10px 10px 0 10px;
+}
+
+.top-bar-container a {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+    padding: 20px;
+    font-size: larger;
+    padding-left: 9px;
+    padding-right: 9px;
+    border: none;
+    border-radius: 21%;
+    text-decoration: none;
+    color: #232f3e;
+    background-color: #fff;
+}
+
+.top-bar-container a:hover {
+    opacity: 0.8;
+}

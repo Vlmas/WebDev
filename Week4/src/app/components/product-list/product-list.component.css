@@ -1,0 +1,65 @@
+.lop-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#list-header {
+    width: 80%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    padding: 15px;
+    text-align: center;
+    font-size: 22px;
+    color: #232f3e;
+    border-bottom: 1px solid #2431427e;
+}
+
+#list-of-products h3 {
+    color: #3f3c3c;
+    font-weight: bolder;
+    padding: 20px;
+}
+
+.lop-container img {
+    margin-left: 20px;
+    padding: 10px;
+    border-right: 1px solid #2431427e;
+}
+
+.lop-items {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.hot-btns {
+    display: flex;
+}
+
+#list-header, h3, p {
+    font-weight: lighter;
+    padding: 7px;
+    padding-left: 12px;
+    color: #7c7a7a;
+}
+
+#list-of-products p {
+    color: #524e4e;
+    width: 500px;
+}
+
+#list-of-products button {
+    padding: 5px;
+    margin-bottom: 15px;
+    margin-left: 12px;
+    width: 64px;
+    color: #fff;
+    background-color: #232f3e;
+    border: 1px solid #7c7a7a;
+    border-radius: 3px;
+    height: 32px;
+    cursor: pointer;
+}

@@ -1,0 +1,26 @@
+<div class="list-container">
+    <h3 id="list-header">Products</h3>
+
+    <div id="list-of-products" *ngFor="let product of products">
+        <h3>
+            <a [title]="product.name + ' details'">{{product.name}}</a>
+        </h3>
+
+        <div class="lop-container">
+            <img width="210" [src]="product.imageUrl" alt="">
+            
+            <div class="lop-items">
+                <p *ngIf="product.description">
+                    Description: {{product.description}}
+                </p>
+
+                <p class="product-rating">Rating: {{product.rating}}</p>
+                <p class="product-price">Price: {{product.price}}$</p>
+                <span class="hot-btns">
+                    <button (click)="share(product.id)">Share</button>
+                    <app-product-alerts [product]="product" (notify)="onNotify()"></app-product-alerts>
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
