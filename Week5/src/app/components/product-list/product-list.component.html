@@ -1,0 +1,7 @@
+<div class="product-list-container">
+    <h3 id="list-header">Products</h3>
+
+    <div class="product-items" *ngFor="let product of products">
+        <app-product-item (status)="editProducts($event)" [product]="product"></app-product-item>
+    </div>
+</div>

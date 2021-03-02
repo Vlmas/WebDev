@@ -1,0 +1,10 @@
+#list-header {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 36px;
+    text-align: center;
+    padding: 16px;
+    border-bottom: 1px solid #2431427e;
+    color: #232f3e;
+}

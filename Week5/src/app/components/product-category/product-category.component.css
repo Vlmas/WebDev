@@ -1,0 +1,18 @@
+.product-categories {
+    width: 84%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    border-bottom: 1px solid #2431427e;
+    color: #232f3e;
+    cursor: pointer;
+}
+
+.product-categories h4:hover {
+    opacity: 0.8;
+    font-size: 18px;
+    transition: 50ms;
+}

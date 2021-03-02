@@ -1,0 +1,36 @@
+<div class="product-container">
+    <div class="item-img-container">
+        <img class="item-img" [src]="product.imageUrl" alt="">
+    </div>
+
+    <div class="product-details">
+        <h4 class="product-name">{{product.name}}</h4>
+
+        <div *ngIf="!showDescription" class="product-chars">
+            <p>Price: <em>{{product.price}}$</em></p>
+            <p style="display: flex; align-items: center;"><strong style="margin-right: 5px;">Rating:</strong> <em style="margin-right: 2px;">{{product.rating}}</em> <img width="22" src="https://cdn4.iconfinder.com/data/icons/pretty_office_3/128/Star-Full.png" alt=""></p>
+        </div>
+
+        <a class="control-btn" (click)="swapDescriptionFlag()">{{flagButtonText}}</a>
+
+        <p *ngIf="showDescription" class="product-des" style="max-width: 550px; overflow-y: auto;">{{product.description}}</p>
+
+        <div *ngIf="!showDescription" class="product-buttons">
+            <div class="sharing">
+                <p (click)="changeToShow()">Share </p>
+                
+                <img *ngIf="showShare" (click)="share('telegram',product.shareLink)" width="36" src="https://cdn0.iconfinder.com/data/icons/social-network-24/512/Telegram-128.png">
+                <img *ngIf="showShare" (click)="share('whatsapp', product.shareLink)" width="30" src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo-whatsapp-128.png">
+            </div>
+
+            <div class="likes-n-del">
+                <div class="likes">
+                    <img (click)="incrementLikes()" width="30" src="https://cdn4.iconfinder.com/data/icons/set-1/32/__1-128.png">
+                    {{product.likes}}
+                </div>
+
+                <img (click)="deleteNode(product.id)" class="del-btn" src="https://cdn4.iconfinder.com/data/icons/simplicio/128x128/notification_error.png" width="30">
+            </div>
+        </div>
+    </div>
+</div>

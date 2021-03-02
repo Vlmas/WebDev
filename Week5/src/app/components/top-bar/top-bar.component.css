@@ -1,0 +1,31 @@
+.top-bar-container, .top-bar-container a, .top-bar-imgs {
+    display: flex;
+    align-items: center;
+}
+
+.top-bar-container {
+    background-color: #232f3e;
+    justify-content: space-between;
+    padding: 10px 15px 10px 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.top-bar-container a {
+    text-decoration: none;
+    color: rgb(218, 213, 213);
+    justify-content: space-around;
+    font-size: 0.8em;
+    width: 96px;
+    font-weight: bolder;
+}
+
+.top-bar-imgs {
+    justify-content: space-between;
+    width: 320px;
+    cursor: pointer;
+}
+
+.top-bar-imgs img:hover, .top-bar-container a:hover {
+    opacity: 0.8;
+}

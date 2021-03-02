@@ -1,0 +1,114 @@
+.product-container {
+    width: 96%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    display: flex;
+    padding: 5px 13px 5px 5px;
+    border: 1px solid #c5c3c3;
+    border-radius: 22px;
+    box-shadow: 0 0 5px #000;
+    background-color: #f7f4f4;
+}
+
+.product-name, .likes, .product-des, .product-chars, .control-btn {
+    color: #232f3e;
+}
+
+.product-details {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.item-img-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 212px;
+    border-right: 2px solid #333335d8;
+    margin-right: 36px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.item-img {
+    padding: 15px;
+    max-height: 230px;
+    max-width: 210px;
+}
+
+.sharing {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    padding-bottom: 7px;
+    height: 36px;
+    border-bottom: 2px solid #333335e1;
+}
+
+.sharing p {
+    border: 3px solid #333335e1;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #232f3e;
+    color: #fff;
+    font-weight: bolder;
+    margin-right: 5px;
+}
+
+.likes {
+    display: flex;
+    align-items: center;
+    margin-right: 500px;
+    font-weight: bolder;
+}
+
+.product-name {
+    width: 440px;
+    font-size: 18px;
+    padding-bottom: 3px;
+    border-bottom: 2px solid #333335e1;
+    margin-top: 15px;
+}
+
+.product-des {
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 7px;
+    border: 3px dotted #333335;
+    border-radius: 5px;
+    line-height: 20px;
+    font-weight: bolder;
+    font-size: 16px;
+    background-color: #fff;
+}
+
+.likes-n-del {
+    display: flex;
+    position: absolute;
+    bottom: 5.5%;
+}
+
+.product-chars {
+    margin-top: 10px;
+    font-weight: bolder;
+    width: 120px;
+}
+
+.product-chars em {
+    color: #000;
+}
+
+.product-buttons img:hover, .control-btn:hover, .sharing p:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.control-btn {
+    margin: 10px 0 25px 0;
+    text-decoration: underline;
+    width: 140px;
+}
