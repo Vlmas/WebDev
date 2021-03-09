@@ -1,0 +1,10 @@
+.up-down {
+    position: absolute;
+    left: 5px;
+    top: 55px;
+}
+
+.go-back:hover, .go-forward:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}

@@ -1,0 +1,23 @@
+<div class="album-detail-container">
+    <div *ngIf="isLoaded">
+        <div class="details">
+            <h2>Album no.{{album.id}} Details</h2>
+
+            <div class="details-inp">
+                <input type="text" [(ngModel)]="album.title" name="album">
+                <button (click)="updateAlbum()">Save</button>
+            </div>
+
+            <p><strong>Title:</strong> {{album.title}}</p>
+        </div>
+        
+        <div class="view-part">
+            <button class="view-photos" [routerLink]="['/albums', album.id, 'photos']">View photos</button>
+        </div>
+    </div>
+
+    <span *ngIf="!isLoaded" class="loading">
+        <img style="margin-right: 4px;" width="36" src="https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-090_loader_loading-128.png">
+        <h4>Loading...</h4>
+    </span>
+</div>

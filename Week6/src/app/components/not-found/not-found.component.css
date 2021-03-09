@@ -1,0 +1,14 @@
+.not-found-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12%;
+}
+
+.not-found-container img {
+    margin-right: 20px;
+}
+
+.not-found-container h2 {
+    color: #232f3e;
+}

@@ -1,0 +1,14 @@
+<div class="album-photos-container">    
+    <div *ngIf="isLoaded" class="wrapper">
+        <ul>
+            <li *ngFor="let photo of photos">
+                <img [src]="photo.thumbnailUrl">
+            </li>
+        </ul>
+    </div>
+
+    <span *ngIf="!isLoaded" class="loading">
+        <img style="margin-right: 4px;" width="36" src="https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-090_loader_loading-128.png">
+        <h4>Loading...</h4>
+    </span>
+</div>

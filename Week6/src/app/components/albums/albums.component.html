@@ -1,0 +1,29 @@
+<div class="albums-container">
+    <div *ngIf="isLoaded">
+        <div class="album-header-part">
+            <h2>Albums</h2>
+        
+            <div class="adder">
+                <input type="text" name="add" placeholder="Enter album content" [(ngModel)]="newContent">
+                <img width="36" (click)="addAlbum()" src="https://cdn2.iconfinder.com/data/icons/top-search/128/_add_plus_round_action_button_new_more-128.png">
+            </div>
+        </div>
+        
+        <div class="list-container">
+            <ul>
+                <li *ngFor="let album of albums; let i = index">
+                    <div class="list-header-part">
+                        <p [routerLink]="['/albums', album.id]">{{i + 1}}. {{album.title}}</p>
+                        <img width="30" (click)="deleteAlbum(album.id)" src="https://cdn0.iconfinder.com/data/icons/round-ui-icons/128/close_red.png">
+                    </div>
+                    <img [src]="randomImage" width="96">
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <span *ngIf="!isLoaded" class="loading">
+        <img style="margin-right: 4px;" width="36" src="https://cdn2.iconfinder.com/data/icons/picons-basic-2/57/basic2-090_loader_loading-128.png">
+        <h4>Loading...</h4>
+    </span>
+</div>
