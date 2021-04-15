@@ -19,6 +19,9 @@ class Company(models.Model):
             'address': self.address
         }
 
+    def __str__(self):
+        return f'{self.id} -> {self.name}: {self.description}, {self.city}'
+
 class Vacancy(models.Model):
     name = models.CharField(max_length=50, default='')
     description = models.TextField(default='')
@@ -35,5 +38,8 @@ class Vacancy(models.Model):
             'name': self.name,
             'description': self.description,
             'salary': self.salary,
-            'company': self.company
+            'company': self.company.to_json()
         }
+
+    def __str__(self):
+        return f'{self.id} -> {self.name}: {self.description}, {self.company.name}'
